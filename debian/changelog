@@ -1,3 +1,12 @@
+nginx (1.14.2-2~bpo8+kadoka1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+  * Roll back Build-Depends on debhelper to 9
+  * Add "kadoka" variant of nginx.
+  * Remove nchan module as it doesn't compile for some reason.
+
+ -- Matt Sickler <matt.sickler@daktronics.com>  Sat, 25 May 2019 14:50:24 -0500
+
 nginx (1.14.2-2) unstable; urgency=medium
 
   [ Kartik Mistry ]
