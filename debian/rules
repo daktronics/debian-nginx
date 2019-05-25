@@ -23,7 +23,6 @@ DYN_MODS := \
 	http-upstream-fair \
 	http-xslt-filter \
 	mail \
-	nchan \
 	rtmp \
 	stream
 
@@ -130,7 +129,6 @@ extras_configure_flags := \
 			--add-dynamic-module=$(MODULESDIR)/http-ndk \
 			--add-dynamic-module=$(MODULESDIR)/http-echo \
 			--add-dynamic-module=$(MODULESDIR)/http-fancyindex \
-			--add-dynamic-module=$(MODULESDIR)/nchan \
 			--add-dynamic-module=$(MODULESDIR)/http-lua \
 			--add-dynamic-module=$(MODULESDIR)/rtmp \
 			--add-dynamic-module=$(MODULESDIR)/http-uploadprogress \

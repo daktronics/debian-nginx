@@ -70,14 +70,6 @@ Copyright: Copyright (c) 2007 Grzegorz Nosek
            Igor Sysoev
 License: BSD-2-clause
 
-Files: debian/modules/nchan/*
-Copyright: 2009-2016 Leo Ponomarev
-License: MIT
-
-Files: debian/modules/nchan/src/store/redis/cmp.*
-Copyright: 2015 Charles Gunyon
-License: MIT
-
 Files: debian/modules/http-uploadprogress/*
 Copyright: Brice Figureau
            2002-2007, Igor Sysoev

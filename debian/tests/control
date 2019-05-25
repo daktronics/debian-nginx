@@ -37,7 +37,6 @@ Depends: nginx-full,
          libnginx-mod-http-upstream-fair,
          libnginx-mod-http-xslt-filter,
          libnginx-mod-mail,
-         libnginx-mod-nchan,
          libnginx-mod-rtmp,
          libnginx-mod-stream
 
@@ -60,7 +59,6 @@ Depends: nginx-light,
          libnginx-mod-http-upstream-fair,
          libnginx-mod-http-xslt-filter,
          libnginx-mod-mail,
-         libnginx-mod-nchan,
          libnginx-mod-rtmp,
          libnginx-mod-stream
 
@@ -83,6 +81,5 @@ Depends: nginx-extras,
          libnginx-mod-http-upstream-fair,
          libnginx-mod-http-xslt-filter,
          libnginx-mod-mail,
-         libnginx-mod-nchan,
          libnginx-mod-rtmp,
          libnginx-mod-stream
