@@ -80,7 +80,7 @@ Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
          ${shlibs:Depends}
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
-Conflicts: nginx-extras, nginx-light
+Conflicts: nginx-extras, nginx-light, nginx-kadoka
 Suggests: nginx-doc (= ${source:Version})
 Description: nginx web/proxy server (standard version)
  Nginx ("engine X") is a high-performance web and reverse proxy server
@@ -113,7 +113,7 @@ Depends: libnginx-mod-http-echo (= ${binary:Version}),
          ${shlibs:Depends}
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
-Conflicts: nginx-extras, nginx-full
+Conflicts: nginx-extras, nginx-full, nginx-kadoka
 Suggests: nginx-doc (= ${source:Version})
 Description: nginx web/proxy server (basic version)
  Nginx ("engine X") is a high-performance web and reverse proxy server
@@ -156,7 +156,7 @@ Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
          ${shlibs:Depends}
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
-Conflicts: nginx-full, nginx-light
+Conflicts: nginx-full, nginx-light, nginx-kadoka
 Suggests: nginx-doc (= ${source:Version})
 Description: nginx web/proxy server (extended version)
  Nginx ("engine X") is a high-performance web and reverse proxy server
@@ -182,6 +182,32 @@ Description: nginx web/proxy server (extended version)
  THIRD PARTY MODULES: Auth PAM, Cache Purge, DAV Ext, Echo, Fancy Index,
  Headers More, Embedded Lua, HTTP Substitutions, Nchan, Upload Progress,
  Upstream Fair Queue.
+
+Package: nginx-kadoka
+Architecture: any
+Priority: extra
+Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
+         libnginx-mod-http-cache-purge (= ${binary:Version}),
+         libnginx-mod-http-echo (= ${binary:Version}),
+         libnginx-mod-http-fancyindex (= ${binary:Version}),
+         libnginx-mod-http-headers-more-filter (= ${binary:Version}),
+         libnginx-mod-http-image-filter (= ${binary:Version}),
+         libnginx-mod-http-lua (= ${binary:Version}),
+         libnginx-mod-nchan (= ${binary:Version}),
+         libnginx-mod-stream (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: nginx (<< 1.4.5-1)
+Provides: httpd, httpd-cgi, nginx
+Conflicts: nginx-full, nginx-light, nginx-extras, nginx-common
+Suggests: nginx-doc (= ${source:Version})
+Description: nginx web/proxy server (kadoka version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx tailored for the Kadoka system.
+ It is roughly based on the nginx-extras package.
 
 Package: libnginx-mod-http-geoip
 Architecture: any
