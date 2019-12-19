@@ -1,3 +1,9 @@
+nginx (1.16.1-2+kadoka1) unstable; urgency=medium
+
+  * Add "kadoka" variant of nginx.
+
+ -- Daktronics Engineering <dakeng@w-13955-buster-1>  Thu, 19 Dec 2019 10:27:54 -0600
+
 nginx (1.16.1-2) unstable; urgency=medium
 
   * http-lua: Downgrade to 0.10.13 (Closes: #941917)
