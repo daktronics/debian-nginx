@@ -186,16 +186,7 @@ Description: nginx web/proxy server (extended version)
 Package: nginx-kadoka
 Architecture: any
 Priority: extra
-Depends: libnginx-mod-http-auth-pam (= ${binary:Version}),
-         libnginx-mod-http-cache-purge (= ${binary:Version}),
-         libnginx-mod-http-echo (= ${binary:Version}),
-         libnginx-mod-http-fancyindex (= ${binary:Version}),
-         libnginx-mod-http-headers-more-filter (= ${binary:Version}),
-         libnginx-mod-http-image-filter (= ${binary:Version}),
-         libnginx-mod-http-lua (= ${binary:Version}),
-         libnginx-mod-nchan (= ${binary:Version}),
-         libnginx-mod-stream (= ${binary:Version}),
-         ${misc:Depends},
+Depends: ${misc:Depends},
          ${shlibs:Depends}
 Breaks: nginx (<< 1.4.5-1)
 Provides: httpd, httpd-cgi, nginx
