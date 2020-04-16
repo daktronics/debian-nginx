@@ -1,3 +1,9 @@
+nginx (1.16.1-2+kadoka2) unstable; urgency=medium
+
+  * Add nginx-kadoka.dirs so that /var/lib/nginx/ and /var/log/nginx/ are created upon package install.
+
+ -- Daktronics Engineering <dakeng@w-13955-buster-1>  Thu, 16 Apr 2020 14:36:07 -0500
+
 nginx (1.16.1-2+kadoka1) unstable; urgency=medium
 
   * Add "kadoka" variant of nginx.
