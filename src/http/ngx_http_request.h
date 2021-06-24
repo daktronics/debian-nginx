@@ -412,6 +412,7 @@ struct ngx_http_request_s {
 
     ngx_str_t                         method_name;
     ngx_str_t                         http_protocol;
+    ngx_str_t                         schema;
 
     ngx_chain_t                      *out;
     ngx_http_request_t               *main;
@@ -469,6 +470,9 @@ struct ngx_http_request_s {
     /* URI with " " */
     unsigned                          space_in_uri:1;
 
+    /* URI with empty path */
+    unsigned                          empty_path_in_uri:1;
+
     unsigned                          invalid_header:1;
 
     unsigned                          add_uri_to_alias:1;
@@ -498,6 +502,10 @@ struct ngx_http_request_s {
     unsigned                          gzip_vary:1;
 #endif
 
+#if (NGX_PCRE)
+    unsigned                          realloc_captures:1;
+#endif
+
     unsigned                          proxy:1;
     unsigned                          bypass_cache:1;
     unsigned                          no_cache:1;
@@ -505,10 +513,13 @@ struct ngx_http_request_s {
     /*
      * instead of using the request context data in
      * ngx_http_limit_conn_module and ngx_http_limit_req_module
-     * we use the single bits in the request structure
+     * we use the bit fields in the request structure
      */
-    unsigned                          limit_conn_set:1;
-    unsigned                          limit_req_set:1;
+    unsigned                          limit_conn_status:2;
+    unsigned                          limit_req_status:3;
+
+    unsigned                          limit_rate_set:1;
+    unsigned                          limit_rate_after_set:1;
 
 #if 0
     unsigned                          cacheable:1;
