@@ -1,3 +1,12 @@
+nginx (1.14.2-2+deb10u1) buster-security; urgency=high
+
+  * Backport upstream fixes for 3 CVEs (Closes: #935037)
+    Those fixes affect Nginx HTTP/2 implementation, which might cause
+    excessive memory consumption and CPU usage.
+    (CVE-2019-9511, CVE-2019-9513, CVE-2019-9516).
+
+ -- Christos Trochalakis <ctrochalakis@debian.org>  Tue, 13 Aug 2019 21:10:28 +0300
+
 nginx (1.14.2-2) unstable; urgency=medium
 
   [ Kartik Mistry ]
@@ -7,6 +16,8 @@ nginx (1.14.2-2) unstable; urgency=medium
 
   [ Christos Trochalakis ]
   * http-dav-ext: Upgrade to 3.0.0 (Closes: #851651)
+  * Use a minimal export of the upstream signing key
+  * Bump Standards-Version, no changes needed
 
  -- Christos Trochalakis <ctrochalakis@debian.org>  Thu, 27 Dec 2018 12:49:34 +0200
 
