@@ -1,3 +1,9 @@
+nginx (1.18.0-5+kadoka1) unstable; urgency=medium
+
+  * rebuild 1.18.0-5 for kadoka
+
+ -- Daktronics Engineering <dakeng@kad306d18>  Wed, 30 Jun 2021 14:19:27 -0500
+
 nginx (1.18.0-5) unstable; urgency=medium
 
   * Prevented request smuggling in LUA
