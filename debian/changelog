@@ -1,3 +1,9 @@
+nginx (1.18.0-5+kadoka2) UNRELEASED; urgency=medium
+
+  * rebuild 1.18.0-5 for kadoka with digest plugin 
+
+ -- Daktronics Engineering <dakeng@kad306d18>  Fri, 02 Jul 2021 08:43:21 -0500
+
 nginx (1.18.0-5+kadoka1) unstable; urgency=medium
 
   * rebuild 1.18.0-5 for kadoka
