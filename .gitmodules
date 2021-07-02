@@ -1,0 +1,3 @@
+[submodule "src/nginx-http-auth-digest"]
+	path = src/nginx-http-auth-digest
+	url = https://github.com/daktronics/nginx-http-auth-digest.git
