@@ -3,7 +3,7 @@ Section: httpd
 Priority: optional
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Uploaders: Jan Mojžíš <jan.mojzis@gmail.com>
-Build-Depends: debhelper-compat (= 13),
+Build-Depends: debhelper-compat (= 12),
                libexpat-dev,
                libgd-dev,
                libgeoip-dev,
