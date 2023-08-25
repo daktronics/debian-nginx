@@ -1,7 +1,7 @@
 # Stop dance for nginx
 # =======================
 #
-# ExecStop sends SIGSTOP (graceful stop) to the nginx process.
+# ExecStop sends SIGQUIT (graceful stop) to the nginx process.
 # If, after 5s (--retry QUIT/5) nginx is still running, systemd takes control
 # and sends SIGTERM (fast shutdown) to the main process.
 # After another 5s (TimeoutStopSec=5), and if nginx is alive, systemd sends
@@ -13,7 +13,8 @@
 [Unit]
 Description=A high performance web server and a reverse proxy server
 Documentation=man:nginx(8)
-After=network.target nss-lookup.target
+After=network-online.target remote-fs.target nss-lookup.target
+Wants=network-online.target
 
 [Service]
 Type=forking

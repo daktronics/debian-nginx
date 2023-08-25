@@ -1,4 +1,4 @@
-nginx-extras (1.22.1-6) unstable; urgency=medium
+nginx-light (1.22.1-6) unstable; urgency=medium
 
   The packages nginx-core, nginx-full, nginx-light, nginx-extras are deprecated.
   Packages no longer distribute the nginx binary and are replaced 
