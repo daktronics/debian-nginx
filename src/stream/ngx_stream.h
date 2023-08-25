@@ -65,6 +65,9 @@ typedef struct {
     int                            backlog;
     int                            rcvbuf;
     int                            sndbuf;
+#if (NGX_HAVE_TCP_FASTOPEN)
+    int                            fastopen;
+#endif
     int                            type;
 } ngx_stream_listen_t;
 
@@ -226,6 +229,8 @@ struct ngx_stream_session_s {
     unsigned                       stat_processing:1;
 
     unsigned                       health_check:1;
+
+    unsigned                       limit_conn_status:2;
 };
 
 
