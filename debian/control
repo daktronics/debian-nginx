@@ -34,6 +34,24 @@ Description: small, powerful, scalable web/proxy server
  created by Igor Sysoev. It can be used both as a standalone web server
  and as a proxy to reduce the load on back-end HTTP or mail servers.
 
+Package: nginx-kadoka
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         iproute2,
+         nginx-common (<< ${source:Version}.1~),
+         nginx-common (>= ${source:Version}),
+Breaks: nginx-light (<< 1.22.1-6~), nginx-extras (<< 1.22.1-6~), nginx-core (<< 1.22.1-6~),
+Replaces: nginx-light (<< 1.22.1-6~), nginx-extras (<< 1.22.1-6~), nginx-core (<< 1.22.1-6~),
+Provides: httpd, httpd-cgi, ${nginx:abi}
+Description: small, powerful, scalable web/proxy server (kadoka version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+  .
+ This package provides a version of nginx tailored for the Kadoka system.
+ It is roughly based on the nginx-extras package.
+
 Package: nginx-doc
 Architecture: all
 Multi-Arch: foreign
@@ -231,23 +249,6 @@ Description: nginx web/proxy server (extended version)
  THIRD PARTY MODULES: Auth PAM, Cache Purge, DAV Ext, Echo, Fancy Index,
  GeoIP2, Headers More, Embedded Lua, HTTP Substitutions, Nchan, Upload Progress,
  Upstream Fair Queue.
-
-Package: nginx-kadoka
-Architecture: any
-Priority: extra
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
-Breaks: nginx (<< 1.4.5-1)
-Provides: httpd, httpd-cgi, nginx
-Conflicts: nginx-full, nginx-light, nginx-extras, nginx-common
-Suggests: nginx-doc (= ${source:Version})
-Description: nginx web/proxy server (kadoka version)
- Nginx ("engine X") is a high-performance web and reverse proxy server
- created by Igor Sysoev. It can be used both as a standalone web server
- and as a proxy to reduce the load on back-end HTTP or mail servers.
- .
- This package provides a version of nginx tailored for the Kadoka system.
- It is roughly based on the nginx-extras package.
 
 Package: libnginx-mod-http-geoip
 Architecture: any
