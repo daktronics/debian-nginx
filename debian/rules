@@ -94,7 +94,7 @@ kadoka_configure_flags := \
 			--with-stream=dynamic \
 			--with-stream_ssl_module \
 			--with-stream_ssl_preread_module \
-			--add-module=src/nginx-http-auth-digest
+			--add-module=mods/nginx-http-auth-digest
 
 %:
 	dh $@ --without autoreconf
