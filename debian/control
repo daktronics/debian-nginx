@@ -12,7 +12,8 @@ Build-Depends: debhelper-compat (= 12),
                libssl-dev,
                libxslt1-dev,
                po-debconf,
-               zlib1g-dev
+               zlib1g-dev,
+               libpam0g-dev
 Standards-Version: 4.6.2
 Homepage: https://nginx.org
 Vcs-Git: https://salsa.debian.org/nginx-team/nginx.git
