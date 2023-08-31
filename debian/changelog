@@ -1,3 +1,11 @@
+nginx (1.24.0-1+kadoka1) unstable; urgency=medium
+
+  * Update nginx version to 1.24.0 (and corresponding fixes)
+  * Update digest submodule version to support basic/os mode
+  * Update repository to fix conflicts when building with git-buildpackage
+
+ -- Daktronics Inc <support@daktronics.com>  Thu, 31 Aug 2023 18:10:35 +0000
+
 nginx (1.24.0-1) unstable; urgency=medium
 
   * New upstream version 1.24.0
