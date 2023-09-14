@@ -40,8 +40,6 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          iproute2,
-         nginx-common (<< ${source:Version}.1~),
-         nginx-common (>= ${source:Version}),
 Breaks: nginx-light (<< 1.22.1-6~), nginx-extras (<< 1.22.1-6~), nginx-core (<< 1.22.1-6~),
 Replaces: nginx-light (<< 1.22.1-6~), nginx-extras (<< 1.22.1-6~), nginx-core (<< 1.22.1-6~),
 Provides: httpd, httpd-cgi, ${nginx:abi}
