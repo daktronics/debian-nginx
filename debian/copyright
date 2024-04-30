@@ -9,59 +9,6 @@ Copyright: Valentin V. Bartenev
  Maxim Dounin
  2011-2024, Nginx, Inc.
  2002-2021, Igor Sysoev
- 2011-2024, Nginx, Inc.
- 2002-2021, Igor Sysoev
-License: BSD-2-clause
-
-Files: CHANGES
-  README
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Roman Arutyunyan
- Maxim Dounin
- 2011-2024, Nginx, Inc.
- 2002-2021, Igor Sysoev
-License: BSD-2-clause
-
-Files: auto/*
-Copyright: Nginx, Inc.
- Igor Sysoev
-License: BSD-2-clause
-
-Files: auto/cc/clang
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: auto/module
-Copyright: Ruslan Ermilov
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: auto/threads
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: conf/*
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Roman Arutyunyan
- Maxim Dounin
- 2011-2024, Nginx, Inc.
- 2002-2021, Igor Sysoev
-License: BSD-2-clause
-
-Files: configure
-Copyright: Nginx, Inc.
- Igor Sysoev
-License: BSD-2-clause
-
-Files: contrib/*
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Roman Arutyunyan
- Maxim Dounin
- 2011-2024, Nginx, Inc.
- 2002-2021, Igor Sysoev
 License: BSD-2-clause
 
 Files: contrib/geo2nginx.pl
@@ -93,49 +40,13 @@ Files: debian/debhelper/dh_nginx
 Copyright: 2016, Christos Trochalakis <ctrochalakis@debian.org>
 License: GPL-2+
 
-Files: debian/debhelper/nginx_mod.pm
-Copyright: © 2022, Miao Wang
-License: BSD-2-clause
-
-Files: debian/help/examples/nginx_modsite
-Copyright: 2010, Michael Lustfield <mtecknology@ubuntu.com>
-License: BSD-2-clause
+Files: debian/ngx-conf/ngx-conf
+Copyright: 2015, Michael Lustfield <michael@lustfield.net>
+License: Expat
 
 Files: man/*
 Copyright: Nginx, Inc.
  2010, 2019, Sergey A. Osokin
-License: BSD-2-clause
-
-Files: src/*
-Copyright: Nginx, Inc.
- Igor Sysoev
-License: BSD-2-clause
-
-Files: src/core/ngx_bpf.c
-  src/core/ngx_bpf.h
-  src/core/ngx_syslog.c
-  src/core/ngx_syslog.h
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/core/ngx_crypt.c
-Copyright: Maxim Dounin
-License: BSD-2-clause
-
-Files: src/core/ngx_md5.c
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Roman Arutyunyan
- Maxim Dounin
- 2011-2022, Nginx, Inc.
- 2002-2021, Igor Sysoev
-License: BSD-2-clause
-
-Files: src/core/ngx_module.c
-  src/core/ngx_module.h
-Copyright: Nginx, Inc.
- Maxim Dounin
- Igor Sysoev
 License: BSD-2-clause
 
 Files: src/core/ngx_murmurhash.c
@@ -144,107 +55,10 @@ License: public-domain
  All MurmurHash versions are public domain software, and the author
  disclaims all copyright to their code.
 
-Files: src/core/ngx_proxy_protocol.c
-  src/core/ngx_proxy_protocol.h
-Copyright: Roman Arutyunyan
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/core/ngx_rwlock.c
-  src/core/ngx_rwlock.h
-Copyright: Ruslan Ermilov
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/core/ngx_sha1.c
-Copyright: Nginx, Inc.
- Maxim Dounin
-License: BSD-2-clause
-
-Files: src/core/ngx_thread_pool.c
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/core/ngx_thread_pool.h
-Copyright: Valentin V. Bartenev
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/event/modules/ngx_win32_poll_module.c
-Copyright: Nginx, Inc.
- Maxim Dounin
- Igor Sysoev
-License: BSD-2-clause
-
-Files: src/event/ngx_event_openssl_stapling.c
-Copyright: Nginx, Inc.
- Maxim Dounin
-License: BSD-2-clause
-
-Files: src/event/ngx_event_udp.c
-Copyright: Roman Arutyunyan
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/event/ngx_event_udp.h
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/event/quic/*
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/event/quic/bpf/*
-Copyright: Nginx, Inc.
- Igor Sysoev
-License: BSD-2-clause
-
-Files: src/event/quic/ngx_event_quic_bpf_code.c
-Copyright: Nginx, Inc.
- Igor Sysoev
-License: BSD-2-clause
-
-Files: src/event/quic/ngx_event_quic_udp.c
-Copyright: Roman Arutyunyan
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/http/modules/ngx_http_auth_request_module.c
-  src/http/modules/ngx_http_grpc_module.c
-  src/http/modules/ngx_http_upstream_keepalive_module.c
-  src/http/modules/ngx_http_upstream_least_conn_module.c
-Copyright: Nginx, Inc.
- Maxim Dounin
-License: BSD-2-clause
-
-Files: src/http/modules/ngx_http_gunzip_filter_module.c
-Copyright: Nginx, Inc.
- Maxim Dounin
- Igor Sysoev
-License: BSD-2-clause
-
-Files: src/http/modules/ngx_http_mirror_module.c
-  src/http/modules/ngx_http_slice_filter_module.c
-  src/http/modules/ngx_http_upstream_hash_module.c
-Copyright: Roman Arutyunyan
- Nginx, Inc.
-License: BSD-2-clause
-
 Files: src/http/modules/ngx_http_scgi_module.c
 Copyright: Nginx, Inc.
  Manlio Perillo (manlio.perillo@gmail.com)
  Igor Sysoev
-License: BSD-2-clause
-
-Files: src/http/modules/ngx_http_upstream_random_module.c
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/http/modules/ngx_http_upstream_zone_module.c
-Copyright: Ruslan Ermilov
- Nginx, Inc.
 License: BSD-2-clause
 
 Files: src/http/modules/ngx_http_uwsgi_module.c
@@ -254,102 +68,14 @@ Copyright: Nginx, Inc.
  2008, Manlio Perillo (manlio.perillo@gmail.com)
 License: BSD-2-clause
 
-Files: src/http/modules/perl/typemap
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Roman Arutyunyan
- Maxim Dounin
- 2011-2022, Nginx, Inc.
- 2002-2021, Igor Sysoev
-License: BSD-2-clause
-
-Files: src/http/ngx_http_huff_decode.c
-Copyright: Valentin V. Bartenev
- Nginx, Inc.
-License: BSD-2-clause
-
 Files: src/http/ngx_http_huff_encode.c
 Copyright: Valentin V. Bartenev
  Nginx, Inc.
  2015, Vlad Krasnov
 License: BSD-2-clause
 
-Files: src/http/v2/*
-Copyright: Valentin V. Bartenev
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/http/v2/ngx_http_v2_filter_module.c
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/http/v3/*
-Copyright: Roman Arutyunyan
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/misc/*
-Copyright: Valentin V. Bartenev
- Ruslan Ermilov
- Roman Arutyunyan
- Maxim Dounin
- 2011-2022, Nginx, Inc.
- 2002-2021, Igor Sysoev
-License: BSD-2-clause
-
-Files: src/misc/ngx_google_perftools_module.c
-Copyright: Nginx, Inc.
- Igor Sysoev
-License: BSD-2-clause
-
-Files: src/os/unix/ngx_dlopen.c
-  src/os/unix/ngx_dlopen.h
-Copyright: Nginx, Inc.
- Maxim Dounin
-License: BSD-2-clause
-
-Files: src/os/unix/ngx_setaffinity.c
-  src/os/unix/ngx_setaffinity.h
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/os/win32/ngx_dlopen.c
-  src/os/win32/ngx_dlopen.h
-Copyright: Nginx, Inc.
- Maxim Dounin
-License: BSD-2-clause
-
-Files: src/stream/ngx_stream.c
-  src/stream/ngx_stream.h
-  src/stream/ngx_stream_core_module.c
-  src/stream/ngx_stream_handler.c
-  src/stream/ngx_stream_pass_module.c
-  src/stream/ngx_stream_proxy_module.c
-  src/stream/ngx_stream_return_module.c
-  src/stream/ngx_stream_upstream_hash_module.c
-Copyright: Roman Arutyunyan
- Nginx, Inc.
-License: BSD-2-clause
-
 Files: src/stream/ngx_stream_set_module.c
 Copyright: Pavel Pautov
- Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/stream/ngx_stream_ssl_preread_module.c
-  src/stream/ngx_stream_upstream_random_module.c
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
-Files: src/stream/ngx_stream_upstream_least_conn_module.c
-Copyright: Nginx, Inc.
- Maxim Dounin
-License: BSD-2-clause
-
-Files: src/stream/ngx_stream_upstream_zone_module.c
-Copyright: Ruslan Ermilov
  Nginx, Inc.
 License: BSD-2-clause
 
