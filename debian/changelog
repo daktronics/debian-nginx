@@ -1,5 +1,6 @@
-nginx (1.24.0-3) UNRELEASED; urgency=medium
+nginx (1.26.0-1) UNRELEASED; urgency=medium
 
+  * New upstream version 1.26.0
   * d/u/signing-key.asc add Roman Arutyunyan’s PGP public key,
     the key is used to sign the 1.26.0 release
 
