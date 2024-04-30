@@ -7,9 +7,9 @@ Copyright: Valentin V. Bartenev
  Ruslan Ermilov
  Roman Arutyunyan
  Maxim Dounin
- 2011-2022, Nginx, Inc.
+ 2011-2024, Nginx, Inc.
  2002-2021, Igor Sysoev
- 2011-2022, Nginx, Inc.
+ 2011-2024, Nginx, Inc.
  2002-2021, Igor Sysoev
 License: BSD-2-clause
 
@@ -19,7 +19,7 @@ Copyright: Valentin V. Bartenev
  Ruslan Ermilov
  Roman Arutyunyan
  Maxim Dounin
- 2011-2022, Nginx, Inc.
+ 2011-2024, Nginx, Inc.
  2002-2021, Igor Sysoev
 License: BSD-2-clause
 
@@ -46,7 +46,7 @@ Copyright: Valentin V. Bartenev
  Ruslan Ermilov
  Roman Arutyunyan
  Maxim Dounin
- 2011-2022, Nginx, Inc.
+ 2011-2024, Nginx, Inc.
  2002-2021, Igor Sysoev
 License: BSD-2-clause
 
@@ -60,7 +60,7 @@ Copyright: Valentin V. Bartenev
  Ruslan Ermilov
  Roman Arutyunyan
  Maxim Dounin
- 2011-2022, Nginx, Inc.
+ 2011-2024, Nginx, Inc.
  2002-2021, Igor Sysoev
 License: BSD-2-clause
 
@@ -111,6 +111,13 @@ Copyright: Nginx, Inc.
  Igor Sysoev
 License: BSD-2-clause
 
+Files: src/core/ngx_bpf.c
+  src/core/ngx_bpf.h
+  src/core/ngx_syslog.c
+  src/core/ngx_syslog.h
+Copyright: Nginx, Inc.
+License: BSD-2-clause
+
 Files: src/core/ngx_crypt.c
 Copyright: Maxim Dounin
 License: BSD-2-clause
@@ -154,11 +161,6 @@ Copyright: Nginx, Inc.
  Maxim Dounin
 License: BSD-2-clause
 
-Files: src/core/ngx_syslog.c
-  src/core/ngx_syslog.h
-Copyright: Nginx, Inc.
-License: BSD-2-clause
-
 Files: src/core/ngx_thread_pool.c
 Copyright: Valentin V. Bartenev
  Ruslan Ermilov
@@ -188,6 +190,25 @@ License: BSD-2-clause
 
 Files: src/event/ngx_event_udp.h
 Copyright: Nginx, Inc.
+License: BSD-2-clause
+
+Files: src/event/quic/*
+Copyright: Nginx, Inc.
+License: BSD-2-clause
+
+Files: src/event/quic/bpf/*
+Copyright: Nginx, Inc.
+ Igor Sysoev
+License: BSD-2-clause
+
+Files: src/event/quic/ngx_event_quic_bpf_code.c
+Copyright: Nginx, Inc.
+ Igor Sysoev
+License: BSD-2-clause
+
+Files: src/event/quic/ngx_event_quic_udp.c
+Copyright: Roman Arutyunyan
+ Nginx, Inc.
 License: BSD-2-clause
 
 Files: src/http/modules/ngx_http_auth_request_module.c
@@ -264,6 +285,11 @@ Copyright: Valentin V. Bartenev
  Nginx, Inc.
 License: BSD-2-clause
 
+Files: src/http/v3/*
+Copyright: Roman Arutyunyan
+ Nginx, Inc.
+License: BSD-2-clause
+
 Files: src/misc/*
 Copyright: Valentin V. Bartenev
  Ruslan Ermilov
@@ -299,6 +325,7 @@ Files: src/stream/ngx_stream.c
   src/stream/ngx_stream.h
   src/stream/ngx_stream_core_module.c
   src/stream/ngx_stream_handler.c
+  src/stream/ngx_stream_pass_module.c
   src/stream/ngx_stream_proxy_module.c
   src/stream/ngx_stream_return_module.c
   src/stream/ngx_stream_upstream_hash_module.c
