@@ -8,6 +8,7 @@ nginx (1.26.0-1) UNRELEASED; urgency=medium
   * d/ufw/nginx update, add QUICK, thanks Marcus Bointon
   * d/conf/mime.types add application/xslt+xml, thanks K. Widholm
   * d/copyright: updated copyright related to new upstream version
+  * d/copyright: bump my copyright year 
 
  -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 30 Apr 2024 17:40:59 +0200
 
