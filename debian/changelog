@@ -1,7 +1,7 @@
 nginx (1.26.0-1) UNRELEASED; urgency=medium
 
   * New upstream version 1.26.0
-  * nginx ABI release: nginx-abi-1.26.0-1
+  * nginx ABI release: nginx-abi-1.26.0-1 (Closes: 1069997)
   * d/u/signing-key.asc add Roman Arutyunyan’s PGP public key,
     the key is used to sign the 1.26.0 release
   * d/p/CVE-2023-44487.patch remove, fixed in upstream
