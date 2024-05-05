@@ -1,4 +1,4 @@
-nginx (1.26.0-1) UNRELEASED; urgency=medium
+nginx (1.26.0-1) unstable; urgency=medium
 
   * New upstream version 1.26.0
   * nginx ABI release: nginx-abi-1.26.0-1 (Closes: 1069997)
@@ -14,7 +14,7 @@ nginx (1.26.0-1) UNRELEASED; urgency=medium
   * d/gbp.conf: add sign-tags = True, [pull] track-missing = True,
     [import-orig] merge-mode = replace
 
- -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 30 Apr 2024 17:40:59 +0200
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Sun, 05 May 2024 18:48:05 +0200
 
 nginx (1.24.0-2) unstable; urgency=medium
 
