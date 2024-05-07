@@ -1,6 +1,7 @@
 nginx (1.26.0-2) UNRELEASED; urgency=medium
 
   * d/rules: enable QUIC and HTTP/3 module (Closes: 1070488)
+  * d/control: bump Standards-Version: 4.7.0, no changes
 
  -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 07 May 2024 19:09:56 +0200
 
