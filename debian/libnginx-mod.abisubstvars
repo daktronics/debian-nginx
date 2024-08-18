@@ -1,8 +1,11 @@
-# update the ABI version when:
-# - nginx upstream has changed
-# - a patch might change the ABI
-# - a build-dependency has changed
-# note that debian revision can increase without breaking ABI
+# ABI must be changed:
+# - when upstream nginx version is changed
+# - when module signature is changed (e.g. time_t change from 32bit integer to 64bit integer https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1069997)
+# - when symbols/structures/... (exported from header files) are changed
 #
-# TODO: use $(DEB_VERSION_UPSTREAM)
+# ABI format: nginx-abi-{UPSTREAM_VERSION}-{SUFFIX}
+# the {SUFFIX} provides a mechanism on rare cases when there have to be ABI
+# changes without upgrading the upstream nginx version, e.g. security updates
+# in oldstable
+
 nginx:abi=nginx-abi-1.26.0-1
