@@ -5,6 +5,7 @@ nginx (1.26.0-2) UNRELEASED; urgency=medium
   * d/control: bump Standards-Version: 4.7.0, no changes
   * d/p/nginx-1.26.1.patch add, backport changes from the nginx 1.26.1 and fix
     CVE-2024-32760, CVE-2024-31079, CVE-2024-35200, CVE-2024-34161
+  * d/p/CVE-2024-7347.patch add, backport CVE-2024-7347 fix
 
   [ Thomas Ward ]
   * d/conf/nginx.conf: Update default options for current security 
