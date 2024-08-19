@@ -9,8 +9,8 @@ nginx (1.26.0-2) UNRELEASED; urgency=medium
   * d/libnginx-mod.abisubstvars updated comment when ABI needs to be changed
 
   [ Thomas Ward ]
-  * d/conf/nginx.conf: Update default options for current security 
-    practices and standards. SSL protos, disable prefer server 
+  * d/conf/nginx.conf: Update default options for current security
+    practices and standards. SSL protos, disable prefer server
     ciphers, hide server tokens/versions in responses.
 
  -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 07 May 2024 19:09:56 +0200
