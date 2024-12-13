@@ -1,3 +1,9 @@
+nginx (1.24.0-1+kadoka3) UNRELEASED; urgency=medium
+
+  * Patch recent authentication issue (#11)
+
+ -- Caleb Impecoven <caleb.impecoven@daktronics.com>  Fri, 13 Dec 2024 19:09:14 +0000
+
 nginx (1.24.0-1+kadoka2) unstable; urgency=medium
 
   [ cimpeco ]
