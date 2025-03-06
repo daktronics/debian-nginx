@@ -1,3 +1,9 @@
+nginx (1.22.1-9+deb12u1) bookworm; urgency=medium
+
+  * d/p/CVE-2025-23419.patch add, backport CVE-2025-23419 fix.
+
+ -- Jan Mojžíš <janmojzis@debian.org>  Mon, 17 Feb 2025 20:40:29 +0100
+
 nginx (1.22.1-9) unstable; urgency=medium
 
   * d/control: nginx-common Breaks+Replaces: nginx (<< 1.22.1-8)

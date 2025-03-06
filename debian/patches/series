@@ -3,3 +3,4 @@ nginx-fix-pidfile.patch
 nginx-ssl_cert_cb_yield.patch
 bug-1024605.patch
 bug-973861.patch
+CVE-2025-23419.patch
