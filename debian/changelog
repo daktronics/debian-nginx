@@ -1,4 +1,10 @@
-nginx (1.24.0-1+kadoka3) UNRELEASED; urgency=medium
+nginx (1.24.0-1+kadoka4) UNRELEASED; urgency=medium
+
+  * Update digest module to pull in fix for memory leak (#13)
+
+ -- Caleb Impecoven <caleb.impecoven@daktronics.com>  Mon, 28 Apr 2025 20:51:01 +0000
+
+nginx (1.24.0-1+kadoka3) unstable; urgency=medium
 
   * Patch recent authentication issue (#11)
 
