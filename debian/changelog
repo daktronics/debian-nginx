@@ -1,4 +1,4 @@
-nginx (1.24.0-1+kadoka4) UNRELEASED; urgency=medium
+nginx (1.24.0-1+kadoka4) unstable; urgency=medium
 
   * Update digest module to pull in fix for memory leak (#13)
 
