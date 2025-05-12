@@ -1,0 +1,3 @@
+[submodule "debian/modules/nginx-http-auth-digest"]
+	path = debian/modules/nginx-http-auth-digest
+	url = https://github.com/daktronics/nginx-http-auth-digest.git
