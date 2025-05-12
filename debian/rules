@@ -5,7 +5,8 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 debian_cflags:=$(shell dpkg-buildflags --get CFLAGS) -fPIC $(shell dpkg-buildflags --get CPPFLAGS)
 debian_ldflags:=$(shell dpkg-buildflags --get LDFLAGS) -fPIC
 
-FLAVOURS := bin
+# FLAVOURS := full light extras kadoka
+FLAVOURS := bin kadoka
 DYN_MODS := \
 	http-geoip \
 	http-image-filter \
@@ -15,6 +16,7 @@ DYN_MODS := \
 	stream \
 	stream-geoip
 
+MODULESDIR = $(CURDIR)/debian/modules
 BASEDIR = $(CURDIR)
 $(foreach flavour,$(FLAVOURS) src ,$(eval BUILDDIR_$(flavour) = $(CURDIR)/debian/build-$(flavour)))
 
@@ -81,6 +83,20 @@ bin_configure_flags := \
 			--with-stream=dynamic \
 			--with-stream_geoip_module=dynamic
 
+kadoka_configure_flags := \
+			$(common_configure_flags) \
+			--with-http_addition_module \
+			--with-http_gunzip_module \
+			--with-http_gzip_static_module \
+			--with-http_image_filter_module=dynamic \
+			--with-http_random_index_module \
+			--with-http_secure_link_module \
+			--with-http_sub_module \
+			--with-stream=dynamic \
+			--with-stream_ssl_module \
+			--with-stream_ssl_preread_module \
+			--add-module=$(MODULESDIR)/nginx-http-auth-digest
+
 %:
 	dh $@ --without autoreconf
 
@@ -123,6 +139,13 @@ strip.arch.%:
 
 strip.mods.%:
 	dh_strip --package=libnginx-mod-$(*) -O--automatic-dbgsym
+
+# clean_patch_modules: $(foreach mod,$(modules_with_patches),clean.patch.$(mod))
+# clean.patch.%:
+# 	if [ -s $(MODULESDIR)/$*/.pc/applied-patches ]; then \
+# 		cd $(MODULESDIR)/$* && QUILT_PATCHES=$(MODULESPATCHDIR)/$* quilt pop -q -a; \
+# 		rm -rf $(MODULESDIR)/$*/.pc; \
+# 	fi
 
 config.arch.%:
 	dh_testdir
