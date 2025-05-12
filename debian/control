@@ -3,7 +3,7 @@ Section: httpd
 Priority: optional
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
 Uploaders: Jan Mojžíš <jan.mojzis@gmail.com>
-Build-Depends: debhelper-compat (= 13),
+Build-Depends: debhelper-compat (= 12),
                libexpat-dev,
                libgd-dev,
                libgeoip-dev,
@@ -12,7 +12,8 @@ Build-Depends: debhelper-compat (= 13),
                libssl-dev,
                libxslt1-dev,
                po-debconf,
-               zlib1g-dev
+               zlib1g-dev,
+               libpam0g-dev
 Standards-Version: 4.6.2
 Homepage: https://nginx.org
 Vcs-Git: https://salsa.debian.org/nginx-team/nginx.git
@@ -33,6 +34,22 @@ Description: small, powerful, scalable web/proxy server
  Nginx ("engine X") is a high-performance web and reverse proxy server
  created by Igor Sysoev. It can be used both as a standalone web server
  and as a proxy to reduce the load on back-end HTTP or mail servers.
+
+Package: nginx-kadoka
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         iproute2,
+Breaks: nginx-light (<< 1.22.1-6~), nginx-extras (<< 1.22.1-6~), nginx-core (<< 1.22.1-6~),
+Replaces: nginx-light (<< 1.22.1-6~), nginx-extras (<< 1.22.1-6~), nginx-core (<< 1.22.1-6~),
+Provides: httpd, httpd-cgi, ${nginx:abi}
+Description: small, powerful, scalable web/proxy server (kadoka version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+  .
+ This package provides a version of nginx tailored for the Kadoka system.
+ It is roughly based on the nginx-extras package.
 
 Package: nginx-doc
 Architecture: all
