@@ -1,8 +1,18 @@
-nginx (1.24.0-1+kadoka5) UNRELEASED; urgency=medium
+nginx (1.24.0-1+kadoka6) unstable; urgency=medium
 
+  [ Caleb Impecoven ]
+  * Try adding a custom rule for dh_strip
+  * Update gbp reference and license for Debian 12
+  * Update debhelper compatible version
+
+ -- Debian <support@daktronics.com>  Tue, 19 Aug 2025 21:23:31 +0000
+
+nginx (1.24.0-1+kadoka5) unstable; urgency=medium
+
+  [ Caleb Impecoven ]
   * Resolve the memory leak in #13 in a different spot (#14)
 
- -- Caleb Impecoven <caleb.impecoven@daktronics.com>  Wed, 30 Apr 2025 16:36:39 +0000
+ -- Debian <support@daktronics.com>  Tue, 19 Aug 2025 21:22:40 +0000
 
 nginx (1.24.0-1+kadoka4) unstable; urgency=medium
 
